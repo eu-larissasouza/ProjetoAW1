@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-language" content="pt-br">
+  <meta name="author" content="Larissa Alves de Souza">
+  <title>Atividade 5</title>
+
+  <!-- Style: Estilizando a página -->
+
+  <style type="text/css">
+    form,
+    select {
+      font-family: "Ebrima";
+      font-size: 15px;
+      color: #353839;
+    }
+
+    legend {
+      font-size: 17px;
+    }
+
+    textarea,
+    input {
+      font-family: "Ebrima";
+      font-size: 15px;
+      color: #353839;
+    }
+
+    button {
+      font-family: "Ebrima";
+      font-size: 15px;
+      margin: 15px;
+    }
+
+    select {
+      width: 170px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Form: Criando o formulário -->
+  <form>
+
+    <!-- Fieldset: Informações Pessoais -->
+
+    <fieldset id="personal">
+
+      <!-- Identificação do Usuário -->
+      <legend><b>Identificação do Usuário</b></legend>
+
+      <p> <label for="name_id">Nome Completo*:</label></br>
+        <input type="text" name="name" id="name_id" maxlength="50" required autofocus></p>
+
+      <p> <label for="nickname_id">Apelido*:</label></br>
+        <input type="text" name="name" id="nickname_id" maxlength="25" disabled></p>
+
+      <p> <label for="email_id">E-mail*:</label></br>
+        <input type="text" name="email" id="email_id" maxlength="50" required autofocus></p>
+
+      <p> <label for="psw_id">Senha*:</label></br>
+        <input type="text" name="password" id="psw_id" maxlength="30" required autofocus></p>
+
+      <label for="date_id">Telefone*:</label></br>
+      <input type="tel" name="telefone" id="telefone_id" maxlength="11" size="8" required autofocus></p>
+
+      <p> <label for="CPF_id">CPF*</label></br>
+        <input type="number" name="CPF" id="CPF_id" maxlength="12" required autofocus></p>
+
+      <p> Sexo*:
+        <input type="radio" name="sexo" value="masculino">Masculino.
+        <input type="radio" name="sexo" value="feminino">Feminino.
+        <p>
+
+          <p> <label for="date_id">Data de nascimento*:</label></br>
+            <input type="date" name="date" id="date_id" min="1990-01-01" max="2006-01-0" /></p>
+
+          <p>
+            <label for="estadocivil_id">Estado Civil*:</label></br>
+            <select name=" estadocivil_id" id="estado_civil ">
+              <option value=" "></option>
+              <option value="Solteiro">Solteiro</option>
+              <option value="Casado">Casado</option>
+              <option value="Separado">Separado</option>
+              <option value="Divorciado">Divorciado</option>
+              <option value="Viúvo">Viúvo</option>
+              <option value="União Estável">União Estável</option>
+            </select>
+          </p>
+
+          <!-- Campo Escolaridade -->
+          <p>
+            <label for="estadocivil_id">Escolaridade*:</label></br>
+            <select name="escolaridade" id="escolaridade_id">
+              <option value=" "></option>
+              <option value="Ensino Fundamental">Ensino Fundamental</option>
+              <option value="Ensino Medio">Ensino Medio</option>
+              <option value="Ensino Superior">Ensino Superior</option>
+              <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+              <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+              <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+            </select>
+          </p>
+
+          <p><label for="ocupacao_id">Ocupação principal:</label></br>
+            <input type="text" name="ocupacao" id="ocupacao_id" /></p>
+
+          <p><label for="renda_id">Renda Mensal:</label></br>
+            <input type="text" name="renda" id="renda_id" /></p>
+
+          <p><label for="numero_id">Número de Dependentes:</label></br>
+            <input type="number" name="numero " id="numero_id" /></p>
+
+    </fieldset>
+    </br>
+
+    <!-- Fieldset: Localização -->
+    <fieldset id="localization">
+      <legend><b>Localização:</b></legend>
+
+      <p> <label for="rua">Rua</label><br>
+        <input type="text" id="rua_id" name="rua"></p>
+
+      <p> <label for="numero">Numero</label><br>
+        <input type="number" id="numero_id" name="numero"></p>
+
+      <p> <label for="complemento">Complemento</label><br>
+        <input type="text" id="complemento_id" name="complemento"></p>
+
+      <p> <label for="cep">CEP</label><br>
+        <input type="text" id="cep_id" name="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}">
+      </p>
+
+      <label for="cidade">Cidade</label><br>
+      <input list="cidades" id="cidade" name="cidade">
+      <p></p>
+      <datalist id="cidades">
+        <option value="São Paulo" label="São Paulo">
+        <option value="Diadema" label="Diadema">
+        <option value="São Bernardo do Campo" label="São Bernardo do Campo">
+        <option value="Santo André" label="Santo André">
+        <option value="Mauá" label="Mauá">
+      </datalist>
+      </p>
+
+      <p> <label for="uf">UF</label><br>
+        <input type="text" id="uf" name="uf" value="SP" readonly></p>
+      <br>
+    </fieldset>
+    </br>
+
+    <!-- Fieldset: Mensagem -->
+    <fieldset id="message">
+      <legend><b>Mensagem do Usuário</b></legend>
+
+      <p> Grau de Urgência:
+        <input type="radio" name="grau_urgencia" value="leve" checked>Leve!
+        <input type="radio" name="grau_urgencia" value="médio">Médio!
+        <input type="radio" name="grau_urgencia" value="grave">Grave!
+        <input type="radio" name="grau_urgencia" value="extremo">Extremamente Grave!
+        <p>
+
+          <p> <label for="mensagem_id">Mensagem*:</label></br>
+            <input type="text" name="mensagem" id="mensagem_id" /></p>
+
+          <p> Reportar Erro:</br>
+            <input type="file" id="myFile" name="filename"></p>
+
+    </fieldset>
+
+    <button type="submit" id="summit_button">Enviar</button>
+    <button type="reset" value="reset_button">Limpar dados</button>
+
+    <p style="color:#4d24bb">*Preenchimento obrigatório</p>
+
+  </form>
+
+
+</body>
+
+</html>
