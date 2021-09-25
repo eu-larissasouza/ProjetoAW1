@@ -6,16 +6,23 @@ var pessoa = {
     },
     apelido: 'Lari',
     sexo: 'Feminino',
-    interesses: ['musica', 'web-design'],
+    hobbies: ['Ouvir musica', 'programar', 'cantar'],
 
-    bio: function() {
+    saudacao: function() {
         console.log(
-            `${this.nome.primeiro} tem ${this.idade} anos de idade` +
-            `Eu gosto de ${this.interesses[0]} e ${this.interesses[1]}`
+            `Muito prazer! Meu nome é ${this.nome.primeiro} ${this.nome.ultimo}, mas todos me chamam de ${this.apelido}`
         )
     },
 
-    saudacao: function() {
-        console.log(`Muito prazer! Eu sou a ${this.apelido}`)
+    bio: function() {
+        console.log(
+            `Tenho ${this.idade} anos de idade \n` +
+            `Meus hobbies são: ${this.hobbies[0]}, ${this.hobbies[1]} ` +
+            `e também gosto muito de ${this.hobbies[2]} `
+        )
     }
 }
+
+console.log(pessoa)
+console.log(pessoa.saudacao())
+console.log(pessoa.bio())
