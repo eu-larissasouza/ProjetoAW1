@@ -1,6 +1,6 @@
-# Aula 16 - Aplicações para Web 1
+# Aula 21 - Aplicações para Web 1
 
-## Códigos em Javascript
+## Javascript - Funções, Objetos e Eventos
 
 Professor: Johnata Souza Santicioli
 

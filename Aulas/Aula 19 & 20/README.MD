@@ -1,6 +1,6 @@
-# Aula 17 - Aplicações para Web 1
+# Aula 19/20 - Aplicações para Web 1
 
-## Códigos em Javascript
+## Introdução ao Javascript
 
 Professor: Johnata Souza Santicioli
 
