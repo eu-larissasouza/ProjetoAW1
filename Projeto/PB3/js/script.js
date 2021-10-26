@@ -31,34 +31,27 @@ function compute() {
 }
 
 function sin() {
-    output.value = Math.sin(output.value)
+    output.value = Math.sin(eval(output.value))
 }
 
 function cos() {
-    output.value = Math.cos(output.value)
+    output.value = Math.cos(eval(output.value))
 }
 
 function tan() {
-    output.value = Math.tan(output.value)
+    output.value = Math.tan(eval(output.value))
 }
 
 function pow() {
-    output.value = Math.pow(output.value, 2)
-}
-
-function power() {
-    var a = output.value.substr('^')
-    var b = output.value.substr('^')
-
-    output.value = Math.pow(a, b)
+    output.value = Math.pow(eval(output.value), 2)
 }
 
 function sqrt() {
-    output.value = Math.sqrt(output.value, 2)
+    output.value = Math.sqrt(eval(output.value), 2)
 }
 
 function log() {
-    output.value = Math.log(output.value)
+    output.value = Math.log(eval(output.value))
 }
 
 function pi() {
@@ -72,7 +65,7 @@ function e() {
 function fact() {
     var i, num, f
     f = 1
-    num = output.value
+    num = eval(output.value)
     for (i = 1; i <= num; i++) {
         f = f * i
     }
