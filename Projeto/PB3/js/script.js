@@ -1,7 +1,8 @@
 var output = document.querySelector('#output')
 var btn = document.querySelectorAll('.btn')
 
-/*============ For getting the value of btn, Here we use for loop ============*/
+/*============ Loop for: Obtém o valor de btn ============*/
+
 for (item of btn) {
     item.addEventListener('click', e => {
         btntext = e.target.innerText

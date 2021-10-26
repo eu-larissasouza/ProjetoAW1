@@ -1,4 +1,4 @@
-# Projeto: Calculadora Científica
+# //Basic Cientific Calculator
 
 ### Uma calculadora cientifica desenvolvida usando HTML, CSS &amp; Javascript
 
@@ -6,7 +6,7 @@
 
 ### Prontuário: SP302394X
 
-[![title-pic](assets/calculator-image.png)](vercel.app)
+[![title-pic](assets/calculator-image.png)](https://sci-calculate.vercel.app)
 
 Essa é uma calculadora científica com as principais funcionalidades utilizadas. A lógica de programação para a calculadora foi feita com o uso de códigos em Javascript.
 
