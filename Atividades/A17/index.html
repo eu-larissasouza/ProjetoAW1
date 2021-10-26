@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Larissa Souza" />
+    <title>Registration Form</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>REGISTRATION FORM</h1>
+        </div>
+
+        <form class="form">
+
+            <div class="row">
+                <div class="form-control">
+                    <label>Nome Completo:</label></br>
+                    <input type="text" id="fullname" name="" placeholder="Insira seu nome completo" autocomplete="off" required>
+                </div>
+
+                <div class="form-control">
+                    <label>Apelido:</label></br>
+                    <input type="text" id="nickname" name="" placeholder="Insira o seu apelido" autocomplete="off" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-control">
+                    <label>Data de nascimento:</label></br>
+                    <input type="date" id="date" name="" maxlength="50" placeholder="00/00/0000" autocomplete="off" required>
+                </div>
+
+                <div class="form-control">
+                    <label>E-mail:</label></br>
+                    <input type="email" id="email" name="" placeholder="Insira o seu apelido" autocomplete="off" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-control">
+                    <label>Telefone:</label></br>
+                    <input type="tel" id="phone" name="" placeholder="(00) 00000-0000" autocomplete="off" data-js="phone" required>
+                </div>
+
+                <div class="form-control">
+                    <label>CPF</label></br>
+                    <input type="text" id="cpf" name="" placeholder="000.000.000-00" autocomplete="off" data-js="cpf" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Enviar</button>
+
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

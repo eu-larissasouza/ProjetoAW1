@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mulish:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--myfont);
+    font-weight: 500;
+}
+
+:root {
+    --myfont: 'Mulish', sans-serif;
+    --my-btn-font: 'Montserrat', sans-serif;
+    --lg-lightcolor: linear-gradient( to left, rgba(116, 235, 213, 0.5), rgba(159, 172, 230));
+    --lg-color: linear-gradient(to left, #74ebd5, #9face6);
+}
+
+body {
+    background-image: var(--lg-lightcolor), url('https://images.pexels.com/photos/325193//pexels-photo-325193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 35px 50px;
+    width: 60%;
+    min-width: 420px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-family: var(--my-btn-font);
+    font-size: 30px;
+    text-align: center;
+    color: #90a0db;
+    text-transform: uppercase;
+}
+
+.form {
+    width: 100%;
+    position: relative;
+    margin: 30px auto 0 auto;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    color: rgb(22, 22, 22);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 15px 25px;
+    margin-bottom: 20px;
+}
+
+.form-control input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #a5a9bb;
+    margin-top: 5px;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #f17896;
+}
+
+.form-control input {
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    font-weight: 400;
+    display: block;
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 12px;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+.errorInput {
+    border: 2px solid rgb(207, 53, 53) !important;
+}
+
+.form-control i {
+    position: absolute;
+    right: 8%;
+    top: 38px;
+    visibility: hidden;
+}
+
+.form .btn {
+    background: var(--lg-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.form .btn:hover {
+    background: linear-gradient(to right, #74ebd5, #9face6);
+}
