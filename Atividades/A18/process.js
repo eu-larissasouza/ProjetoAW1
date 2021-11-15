@@ -50,7 +50,7 @@ const readFile = file =>
         console.log(String(contents))
     })*/
 
-/*readFile('../txt/in1.txt')
+/*readFile('txt/in1.txt')
     .then(contents => {
         console.log(String(contents))
         return readFile('txt/in2.txt')
