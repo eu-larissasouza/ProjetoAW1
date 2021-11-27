@@ -1,0 +1,29 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+a.navbar-brand {
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+.btn-primary {
+    background-color: #0a66c2;
+    border-color: #0a66c2;
+}
+
+pre#lyrics {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
